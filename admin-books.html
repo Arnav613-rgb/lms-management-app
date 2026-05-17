@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Books</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Manage Books</h1></header>
+
+<div class="container">
+  <input id="title" placeholder="Book Title">
+  <input id="author" placeholder="Author">
+  <input id="quantity" type="number" placeholder="Quantity">
+  <button onclick="addBook()">Add Book</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Qty</th>
+      </tr>
+    </thead>
+    <tbody id="bookTable"></tbody>
+  </table>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/admin-books.js"></script>
+</body>
+</html>
